@@ -1,0 +1,77 @@
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background: url('https://i.imgsafe.org/5646ddd993.png')
+
+.calc
+  width: 305px
+  height: 389px
+  position: absolute
+  display: flex
+  flex-direction: column
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  border-radius: 7px
+  background: #fff
+  .calc-btn,
+  #number-display
+    font-family: "orbitron",sans-serif
+  button
+    cursor: pointer
+    transition: background .3s
+  .display
+    width: 305px
+    height: 85px
+    border: 1px solid #555
+    border-radius: 7px 7px 0 0
+    background-color: rgba(7, 77, 255, .15)
+    #number-display
+      font-size: 1.8rem
+      text-align: right
+      margin: 26px 8px 26px
+  .row
+    display: flex
+  .calc-btn
+    width: 80px
+    height: 63px
+    font-size: 1.2rem
+    border: 1px solid #555
+  .top
+    height: 50px
+  .right
+    width: 65px
+  #no0
+    width: 160px
+    border-radius: 0 0 0 7px
+  #equals
+    height: 126px
+    position: absolute
+    left: 240px
+    border-radius: 0 0 7px
+  /* BACKGROUNDS */
+  .l-col
+    background-color: rgba(7, 77, 255, .2)
+    &:hover
+      background-color: rgba(7, 77, 255, .275)
+  .m-col
+    background-color: rgba(7, 77, 255, .4)
+    &:hover
+      background-color: rgba(7, 77, 255, .475)
+  .r-col
+    background-color: rgba(7, 77, 255, .6)
+    &:hover
+      background-color: rgba(7, 77, 255, .675)
+  .operators
+    background-color: rgba(7, 77, 255, .9)
+    &:hover
+      background-color: rgb(7, 77, 255)
+  #no0
+    background: linear-gradient(to right, rgba(7, 77, 255, .2) 0%,rgba(7, 77, 255, .4) 100%)
+    &:hover
+      background: linear-gradient(to right, rgba(7, 77, 255, .275) 0%,rgba(7, 77, 255, .475) 100%)

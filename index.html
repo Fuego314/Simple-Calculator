@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+	<title>Calculator</title>
+	<meta name="description" content="Simple Calculator App">
+	<meta name="Author" content="Luke Tucker">
+	<!-- build:css css/styles.min.css -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- endbuild -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="calc">
+
+	  <div class="display"><p id="number-display"></p></div>
+
+	  <div class="row">
+	    <button id="CE" class="top operators calc-btn">CE</button>
+	    <button id="C" class="top operators calc-btn">C</button>
+	    <button id="divide" class="top operators calc-btn">/</button>
+	    <button id="times" class="top right operators calc-btn">X</button>
+	  </div><!-- row -->
+
+	  <div class="row">
+	    <button id="no7" class="l-col calc-btn">7</button>
+	    <button id="no8" class="m-col calc-btn">8</button>
+	    <button id="no9" class="r-col calc-btn">9</button>
+	    <button id="minus" class="right operators calc-btn">-</button>
+	  </div><!-- row -->
+
+	  <div class="row">
+	    <button id="no4" class="l-col calc-btn">4</button>
+	    <button id="no5" class="m-col calc-btn">5</button>
+	    <button id="no6" class="r-col calc-btn">6</button>
+	    <button id="plus" class="right operators calc-btn">+</button>
+	  </div><!-- row -->
+
+	  <div class="row">
+	    <button id="equals" class="right operators calc-btn">=</button>
+	    <button id="no1" class="l-col calc-btn">1</button>
+	    <button id="no2" class="m-col calc-btn">2</button>
+	    <button id="no3" class="r-col calc-btn">3</button>
+	  </div><!-- row -->
+
+	  <div class="row">
+	    <button id="no0" class="calc-btn">0</button>
+	    <button id="decimal" class="r-col calc-btn">.</button>
+	  </div><!-- row -->
+
+	</div><!-- calc -->
+
+	<script src="https://use.typekit.net/wnd1juk.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!--build:js js/main.min.js -->
+	<script src="js/babel/app.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
